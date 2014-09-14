@@ -24,8 +24,12 @@ angular.module('gifmachineApp')
 
                 })
 
-                gif.on('progress', function (p) {
-                    console.log("progress", p);
+                gif.on('progress', function (p, c) {
+
+                    $scope.$apply(function(){
+                        $scope.status = p;
+                    });
+
 
                 })
 
