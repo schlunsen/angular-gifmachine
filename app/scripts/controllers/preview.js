@@ -14,7 +14,7 @@ angular.module('gifmachineApp')
                 var gif = new GIF({
                     workers: 2,
                     quality: 1,
-                    workerScript: '/scripts/vendors/gif.worker.js',
+                    workerScript: window.location.pathname + 'scripts/vendors/gif.worker.js',
                     width: imageElm.width,
                     height: imageElm.height
                 });
