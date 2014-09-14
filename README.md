@@ -9,7 +9,7 @@ Reference and learning application for an frontend angular application.
 Installation
 ------------
 
-``
+```
 git clone git@github.com:schlunsen/angular-gifmachine.git 
 
 cd angular-gifmachine
@@ -24,7 +24,6 @@ grunt serve
 
 # For building the app, see generated dist/ folder 
 grunt build
-
-``
+```
 
 Created with Yeoman and the angular generator
