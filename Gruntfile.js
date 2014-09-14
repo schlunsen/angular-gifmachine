@@ -391,7 +391,7 @@ module.exports = function (grunt) {
                         dot: true,
                         cwd: '<%= yeoman.app %>',
                         dest: '<%= yeoman.dist %>',
-                        src: '/scripts/vendors/gif.worker.js'
+                        src: ['scripts/vendors/gif.worker.js']
                     }
                 ]
 
