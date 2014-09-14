@@ -45,7 +45,7 @@ angular
                 redirectTo: '/'
             });
     })
-    .run(function($rootScope){
+    .run(['$rootScope', function($rootScope){
         $rootScope.currentImages = [];
         $rootScope.createdGifs = [];
-    });
+    }]);

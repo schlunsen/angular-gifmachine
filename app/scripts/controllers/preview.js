@@ -9,10 +9,10 @@ angular.module('gifmachineApp')
 
             var imageElm = document.createElement('img')
 
+            // Load image to get it's size. After create gifs
             imageElm.addEventListener('load', function () {
-                alert(2);
                 var gif = new GIF({
-                    workers: 1,
+                    workers: 2,
                     quality: 1,
                     workerScript: '/scripts/vendors/gif.worker.js',
                     width: imageElm.width,
