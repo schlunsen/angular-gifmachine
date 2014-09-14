@@ -1,0 +1,33 @@
+<div class="text-center">
+
+
+    <h2 class="text-center">Make your gif</h2>
+
+
+    <webcam on-stream="onStream(stream,video)"
+            on-error="onError(err)"
+            on-streaming="onSuccess(video)"></webcam>
+
+
+    <div collapse="!isCameraStarted">
+
+
+        <button class="btn btn-primary" ng-click="makeSnapshot()">Take snapshoot</button>
+
+        <button class="btn btn-success" ng-click="previewGIF()">Preview GIF</button>
+
+        <canvas id="snapshot"></canvas>
+    </div>
+</div>
+
+<hr/>
+<div class="text-center" collapse="images.length === 0">
+    <button class="btn btn-warning"  ng-click="clearImages()">Clear roll</button>
+</div>
+
+
+<ul class="list-unstyled list-inline image-roll">
+    <li ng-repeat="im in images">
+        <img src="{{im}}" alt=""/>
+    </li>
+</ul>
